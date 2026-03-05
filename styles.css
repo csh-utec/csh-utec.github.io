@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0B0F14;
+    color: #E6EDF3;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(11,15,20,0.85);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 25px;
+    color: #AAB4C3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0072CE;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-logo{
+    width: 70%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.slogan{
+    margin-top: -250px;
+}
+.hero h1 {
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+.section-card {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #121821;
+    border: 1px solid #1E2A38;
+    border-radius: 12px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.member {
+    background: #0F141B;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.member span {
+    color: #0072CE;
+}
+
+.center {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    background: #0F141B;
+    border: 1px solid #1E2A38;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0072CE;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn {
+    background: #003B70;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.terminal {
+    background: #0F141B;
+    padding: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #6C7A89;
+}
+
+.socials a {
+    margin: 0 15px;
+    color: #AAB4C3;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #0072CE;
+}

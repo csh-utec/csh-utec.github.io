@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<canvas id="bg-animation"></canvas>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="CSH_Logo.png" alt="CSH Logo" class="logo">
+    </div>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#anuncios">Anuncios</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#writeups">Writeups</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#unete">Únete</a>
+    </nav>`
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <img src="CSH_Logo.png" alt="Logo CSH Grande" class="hero-logo">
+    <p class="slogan">HACK OR BE HACKED</p>
+    <p>Formando talento en seguridad ofensiva, defensiva y cultura hacker ética.</p>
+</section>
+
+<section id="sobre" class="section-card">
+    <h2>Quiénes Somos</h2>
+    <p>CSH es una organización estudiantil fundada en los UTEC con propósito de 
+        consolidar una comunidad sólida y técnica en torno a la ciberseguridad. </p>
+
+    <div class="grid-2">
+        <div>
+            <h3>Misión</h3>
+            <p>Desarrollar talento en ciberseguridad mediante formación técnica, participación en competencias,
+                investigación aplicada y cultura hacker ética, contribuyendo a la preparación integral de
+                estudiantes altamente competentes.</p>
+        </div>
+        <div>
+            <h3>Visión</h3>
+            <p>Convertirnos en la comunidad universitaria referente en ciberseguridad en el Perú, 
+                reconocida por su excelencia técnica, impacto académico y participación destacada 
+                en competencias nacionales e internacionales.</p>
+        </div>
+    </div>
+</section>
+
+<section id="anuncios" class="section-card">
+    <h2>Anuncios</h2>
+    <div id="lista-anuncios"></div>
+</section>
+
+<section id="eventos" class="section-card">
+    <h2>Eventos</h2>
+    <div id="eventos-proximos"></div>
+</section>
+
+<section id="writeups" class="section-card">
+    <h2>Writeups</h2>
+    <div id="lista-writeups"></div>
+</section>
+
+<section id="equipo" class="section-card">
+    <h2>Equipo</h2>
+
+    <div class="team-grid">
+
+        <div class="member">
+            <h4>Diego Godoy</h4>
+            <span>Coordinador General</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Benjamin Toro</h4>
+            <span>SubCoordinador General</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Omar Chavarria</h4>
+            <span>Coordinador Interno</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Brisseth Surquislla</h4>
+            <span>Coordinadora de Investigación</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Solange Minez</h4>
+            <span>Coordinadora de Eventos</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Brigitte Rojas</h4>
+            <span>Coordinadora de Alianzas Estratégicas</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Gustavo Ortiz</h4>
+            <span>Consultor Adjunto de Ciberseguridad</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Gabriel Blanco</h4>
+            <span>Consultor Adjunto de Ciberseguridad</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+
+        <div class="member">
+            <h4>Mishelle Villareal</h4>
+            <span>Coordinadora de Marketing</span>
+            <p>Hola, este soy yo...</p>
+        </div>
+    </div>
+</section>
+
+<section id="unete" class="section-card center">
+    <h2>Únete a CSH</h2>
+    <p>Forma parte de la comunidad estudiantil de ciberseguridad de la UTEC.</p>
+    <a href="https://forms.gle/EiUBtWVxYbdM5zFa9" target="_blank" class="btn">
+        Postular a CSH
+    </a>
+</section>
+
+<section id="terminal" class="section-card">
+    <h2>Consola CSH</h2>
+    <div class="terminal">
+        <div id="output"></div>
+        <input type="text" id="input" placeholder="Escribe help...">
+    </div>
+</section>
+
+<footer>
+    <div class="socials">
+        <a href="https://www.instagram.com/csh.utec/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        
+        <a href="https://www.linkedin.com/company/csh-utec?trk=public_post_feed-actor-name" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        
+        <a href="https://github.com/csh-utec" target="_blank" rel="noopener noreferrer">GitHub</a>
+        
+        <a href="https://discord.gg/zh6ccAs3fC" target="_blank" rel="noopener noreferrer">Discord</a>
+        
+        <a href="https://chat.whatsapp.com/JPtod8RHQ4220v1Vc4lbdO" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+    <p>© 2026 CSH</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
