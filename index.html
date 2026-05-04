@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSH</title>
-
+<meta name="description" content="CSH — Comunidad de Ciberseguridad en UTEC. Formando talento en seguridad ofensiva, defensiva y cultura hacker ética.">
+<title>CSH — Cybersecurity Student Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,6 @@
     <div class="logo-container">
         <img src="CSH_Logo.png" alt="CSH Logo" class="logo">
     </div>
-
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#anuncios">Anuncios</a>
@@ -30,107 +29,470 @@
 
 <section class="hero">
     <div class="hero-content">
-        <img src="CSH_Logo.png" alt="Logo CSH Grande" class="hero-logo">
-    <p class="slogan">HACK OR BE HACKED</p>
-    <p>Formando talento en seguridad ofensiva, defensiva y cultura hacker ética.</p>
-</div>
+        <div class="hero-logo-wrap">
+            <img src="CSH_Logo.png" alt="Logo CSH" class="hero-logo">
+        </div>
+        <div class="hero-tagline-row">
+            <span class="hero-bracket">&lt;</span>
+            <h1 class="hero-tagline" id="heroTagline"></h1>
+            <span class="hero-bracket">/&gt;</span>
+        </div>
+        <div class="hero-sub">
+            <span class="hero-arrow">›</span>
+            <span class="hero-sub-text">Formando talento en seguridad ofensiva, defensiva y cultura hacker ética.</span>
+        </div>
+        <div class="hero-badges">
+            <span class="hero-badge">Red Team</span>
+            <span class="hero-badge">Blue Team</span>
+            <span class="hero-badge">CTF</span>
+            <span class="hero-badge">UTEC · Lima</span>
+        </div>
+    </div>
 </section>
 
 <section id="sobre" class="section-card">
     <h2>Quiénes Somos</h2>
-    <p>CSH es una organización estudiantil fundada en los UTEC con propósito de 
-        consolidar una comunidad sólida y técnica en torno a la ciberseguridad. </p>
-
+    <p>CSH es una organización estudiantil fundada en UTEC con el propósito de
+        consolidar una comunidad sólida y técnica en torno a la ciberseguridad.</p>
     <div class="grid-2">
-        <div>
-            <h3>Misión</h3>
-            <p>Desarrollar talento en ciberseguridad mediante formación técnica, participación en competencias,
-                investigación aplicada y cultura hacker ética, contribuyendo a la preparación integral de
-                estudiantes altamente competentes.</p>
+
+        <div class="sobre-flip">
+            <div class="sobre-flip-inner">
+                <div class="sobre-front">
+                    <svg class="sobre-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+                    <h3>Misión</h3>
+                    <div class="sobre-tags">
+                        <span>Formación Técnica</span>
+                        <span>CTF</span>
+                        <span>Investigación</span>
+                        <span>Cultura Hacker</span>
+                    </div>
+                    <div class="flip-hint">hover para leer →</div>
+                </div>
+                <div class="sobre-back">
+                    <h3>Misión</h3>
+                    <p>Desarrollar talento en ciberseguridad mediante formación técnica, participación en competencias,
+                    investigación aplicada y cultura hacker ética, contribuyendo a la preparación integral de
+                    estudiantes altamente competentes.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Visión</h3>
-            <p>Convertirnos en la comunidad universitaria referente en ciberseguridad en el Perú, 
-                reconocida por su excelencia técnica, impacto académico y participación destacada 
-                en competencias nacionales e internacionales.</p>
+
+        <div class="sobre-flip">
+            <div class="sobre-flip-inner">
+                <div class="sobre-front">
+                    <svg class="sobre-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.3"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+                    <h3>Visión</h3>
+                    <div class="sobre-tags">
+                        <span>Referente Perú</span>
+                        <span>Excelencia</span>
+                        <span>Internacional</span>
+                        <span>Comunidad</span>
+                    </div>
+                    <div class="flip-hint">hover para leer →</div>
+                </div>
+                <div class="sobre-back">
+                    <h3>Visión</h3>
+                    <p>Convertirnos en la comunidad universitaria referente en ciberseguridad en el Perú,
+                    reconocida por su excelencia técnica, impacto académico y participación destacada
+                    en competencias nacionales e internacionales.</p>
+                </div>
+            </div>
         </div>
+
     </div>
 </section>
 
 <section id="anuncios" class="section-card">
     <h2>Anuncios</h2>
-    <div id="lista-anuncios"></div>
+    <div class="pending-box">
+        <div class="pending-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.5"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+        </div>
+        <p>Próximamente — contenido en preparación.</p>
+        <span class="pending-tag">PENDIENTE</span>
+    </div>
 </section>
 
 <section id="eventos" class="section-card">
     <h2>Eventos</h2>
-    <div id="eventos-proximos"></div>
+    <div class="events-scene" id="eventsScene">
+        <button class="carousel-nav-btn" id="evPrev">&#8249;</button>
+        <div class="events-3d-carousel" id="events3d">
+            <div class="event-face" style="--i:0">
+                <img src="Eventos/chocociber-uni-1.jpg" alt="Choco Ciber UNI">
+                <div class="event-caption">Choco Ciber UNI</div>
+            </div>
+            <div class="event-face" style="--i:1">
+                <img src="Eventos/chocociber-uni-2.jpg" alt="Choco Ciber UNI II">
+                <div class="event-caption">Choco Ciber UNI II</div>
+            </div>
+            <div class="event-face" style="--i:2">
+                <img src="Eventos/hack-the-future.jpg" alt="Hack The Future">
+                <div class="event-caption">Hack The Future</div>
+            </div>
+            <div class="event-face" style="--i:3">
+                <img src="Eventos/taller-1-ciber.jpg" alt="Taller de Ciberseguridad">
+                <div class="event-caption">Taller 1 de Ciberseguridad</div>
+            </div>
+        </div>
+        <button class="carousel-nav-btn" id="evNext">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="evDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+    </div>
 </section>
 
 <section id="writeups" class="section-card">
-    <h2>Writeups</h2>
-    <div id="lista-writeups"></div>
+    <h2>Writeups &amp; Materiales</h2>
+    <div class="writeups-grid">
+
+        <div class="writeup-card">
+            <div class="pdf-cover">
+                <div class="pdf-cover-inner">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.5"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    <span class="cover-label">PDF</span>
+                    <span class="cover-topic">Redes · Teoría</span>
+                </div>
+            </div>
+            <div class="writeup-info">
+                <div class="writeup-tag">PDF · Networking</div>
+                <h4>Taller de Redes — Teoría</h4>
+                <p class="writeup-desc">Fundamentos teóricos de redes aplicados a ciberseguridad.</p>
+                <div class="writeup-actions">
+                    <button class="btn-sm" data-pdf="materials_CSH/Taller redes - Teoria - CSH.pdf" data-title="Taller de Redes — Teoría">Ver PDF</button>
+                    <a href="materials_CSH/Taller redes - Teoria - CSH.pdf" download class="btn-sm btn-outline">Descargar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="writeup-card">
+            <div class="pdf-cover">
+                <div class="pdf-cover-inner">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                    <span class="cover-label">PDF</span>
+                    <span class="cover-topic">Redes · Lab</span>
+                </div>
+            </div>
+            <div class="writeup-info">
+                <div class="writeup-tag">PDF · Laboratorio</div>
+                <h4>Taller de Redes — Lab 1</h4>
+                <p class="writeup-desc">Ejercicios prácticos de networking y análisis de tráfico.</p>
+                <div class="writeup-actions">
+                    <button class="btn-sm" data-pdf="materials_CSH/Taller Redes - Laboratorio 1 - CSH.pdf" data-title="Taller de Redes — Laboratorio 1">Ver PDF</button>
+                    <a href="materials_CSH/Taller Redes - Laboratorio 1 - CSH.pdf" download class="btn-sm btn-outline">Descargar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="writeup-card featured">
+            <div class="pdf-cover">
+                <div class="pdf-cover-inner">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.5"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    <span class="cover-label">PDF</span>
+                    <span class="cover-topic">Recursos · Apoyo</span>
+                </div>
+            </div>
+            <div class="writeup-info">
+                <div class="writeup-tag">PDF · Recursos</div>
+                <h4>Materiales Complementarios</h4>
+                <p class="writeup-desc">Recursos de apoyo y referencias para el estudio en ciberseguridad.</p>
+                <div class="writeup-actions">
+                    <button class="btn-sm" data-pdf="materials_CSH/complementary_materials.pdf" data-title="Materiales Complementarios">Ver PDF</button>
+                    <a href="materials_CSH/complementary_materials.pdf" download class="btn-sm btn-outline">Descargar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="writeup-card">
+            <div class="pdf-cover">
+                <div class="pdf-cover-inner pptx">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0072CE" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    <span class="cover-label">PPTX</span>
+                    <span class="cover-topic">Presentación</span>
+                </div>
+            </div>
+            <div class="writeup-info">
+                <div class="writeup-tag">PPTX · Slides</div>
+                <h4>Presentación CSH</h4>
+                <p class="writeup-desc">Slides de presentación oficial de la organización CSH.</p>
+                <div class="writeup-actions">
+                    <a href="materials_CSH/CSH-ppt3.pptx" download class="btn-sm">Descargar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section id="equipo" class="section-card">
     <h2>Equipo</h2>
-
     <div class="team-carousel">
         <div class="team-track">
 
-        <div class="member">
-            <h4>Diego Godoy</h4>
-            <span>Coordinador General</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">DG</div>
+                        <div class="member-role-tag">Coordinador General</div>
+                        <h4>Diego Godoy</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">Networking · Homelabbing · Hardware</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Coordinador General</div>
+                        <h4>Diego Godoy</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>IS student con interés en networking, homelabbing, ciberseguridad y hardware. Me apasiona entender infraestructuras tecnológicas desde dentro.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Vi en CSH la oportunidad de expandir conocimientos y culturizar sobre ciberseguridad.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Posicionar CSH como referente en ciberseguridad en el Perú.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Benjamin Toro</h4>
-            <span>SubCoordinador General</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">BT</div>
+                        <div class="member-role-tag">SubCoordinador General</div>
+                        <h4>Benjamin Toro</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">IA · Ciberseguridad · Impacto real</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">SubCoordinador General</div>
+                        <h4>Benjamin Toro</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>CS student con enfoque práctico. Me interesa construir soluciones con IA que tengan impacto real, especialmente en ciberseguridad.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Faltaba un espacio en UTEC para crecer en este campo — decidí ayudar a crearlo.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Certificación en Ciberseguridad y cumplir las metas del equipo CSH.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Omar Chavarria</h4>
-            <span>Coordinador Interno</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">OC</div>
+                        <div class="member-role-tag">Coordinador Interno</div>
+                        <h4>Omar Chavarría</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">CS · Linux · Hack The Box</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Coordinador Interno</div>
+                        <h4>Omar Chavarría</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>CS student en UTEC. Mi curiosidad está en la ciberseguridad y en cómo proteger la tecnología que usamos a diario.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Más allá de los términos técnicos, CSH es el lugar para construir cultura de seguridad juntos.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Conectar con profesionales top del sector y certificarme en HTB.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Brisseth Surquislla</h4>
-            <span>Coordinadora de Investigación</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">BS</div>
+                        <div class="member-role-tag">Coordinadora de Investigación</div>
+                        <h4>Brisseth Surquilla</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">Normativas · Riesgos · Redes</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Coordinadora de Investigación</div>
+                        <h4>Brisseth Surquilla</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>Estudiante de Ciberseguridad interesada en normativas, gestión de riesgos y seguridad en redes.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Impulso iniciativas de seguridad digital aportando desde mi rol, forjando experiencias tech colaborativas.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Certificarme en idiomas y seguir explorando nuevas áreas de seguridad digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Solange Minez</h4>
-            <span>Coordinadora de Eventos</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">SM</div>
+                        <div class="member-role-tag">Coordinadora de Eventos</div>
+                        <h4>Solange Minez</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">Eventos · Imagen Institucional</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Coordinadora de Eventos</div>
+                        <h4>Solange Minez</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>Gestión de eventos e imagen institucional. Valoro disfrutar el proceso y las cosas simples del día a día.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Busco potenciar la colaboración y el aprendizaje desde una perspectiva tech con impacto real.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Consolidar la imagen institucional de CSH y organizar eventos de alto impacto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Brigitte Rojas</h4>
-            <span>Coordinadora de Alianzas Estratégicas</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">BR</div>
+                        <div class="member-role-tag">Alianzas Estratégicas</div>
+                        <h4>Brigitte Rojas</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">CS · Partnerships · Cloud</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Alianzas Estratégicas</div>
+                        <h4>Brigitte Rojas</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>CS student. Me apasiona tender puentes entre el desarrollo técnico y el sector corporativo a través de alianzas estratégicas.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Aporto mi visión para forjar alianzas clave que fortalezcan nuestra comunidad.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Partnerships con empresas top del ecosistema tech y certificación en Cloud o PM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Gustavo Ortiz</h4>
-            <span>Consultor Adjunto de Ciberseguridad</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">GO</div>
+                        <div class="member-role-tag">Consultor Externo</div>
+                        <h4>Gustavo Ortiz</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">Pentester · CTF · Criptografía</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Consultor Externo</div>
+                        <h4>Gustavo Ortiz</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>Matemáticas PUCP · Junior Pentester en Layer 8 Security. Criptografía y explotación de vulnerabilidades reales.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>CTFs, pentesting real, mentalidad crítica: aprender haciendo, fallar rápido y mejorar constantemente.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Proyectos reales de pentesting, CTFs continuos y más certificaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Gabriel Blanco</h4>
-            <span>Consultor Adjunto de Ciberseguridad</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">GB</div>
+                        <div class="member-role-tag">Consultor Ciberseguridad</div>
+                        <h4>Gabriel Blanco</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">Blue Team · IS · Defensa</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Consultor Ciberseguridad</div>
+                        <h4>Gabriel Blanco</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>IS student en UTEC con fuerte interés en ciberseguridad, especialmente en Blue Team y defensa.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>Quiero expandir la cultura de ciberseguridad en el Perú, adaptándola a la vida diaria.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Crecer mediante ponencias y obtener certificación Security+.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="member">
-            <h4>Mishelle Villareal</h4>
-            <span>Coordinadora de Marketing</span>
-            <p>Hola, este soy yo...</p>
-        </div>
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <div class="member-avatar">MV</div>
+                        <div class="member-role-tag">Subcoord. de Marketing</div>
+                        <h4>Mishelle Villarreal</h4>
+                        <span class="member-handle">@csh.utec</span>
+                        <p class="member-preview">CS · Criptografía · Cuántica</p>
+                        <div class="flip-hint">hover para más</div>
+                    </div>
+                    <div class="member-back">
+                        <div class="member-role-tag">Subcoord. de Marketing</div>
+                        <h4>Mishelle Villarreal</h4>
+                        <div class="bio-block">
+                            <span class="bio-label">WHOAMI</span>
+                            <p>CS student. Me encanta la criptografía y la seguridad defensiva, especialmente seguridad física de entornos.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">¿Por qué CSH?</span>
+                            <p>En ciberseguridad hay diferentes ramas — me gusta aprender de otros y aportar lo que conozco.</p>
+                        </div>
+                        <div class="bio-block">
+                            <span class="bio-label">Metas 2026</span>
+                            <p>Aprender computación cuántica y prepararme para una certificación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -139,6 +501,7 @@
 <section id="unete" class="section-card center">
     <h2>Únete a CSH</h2>
     <p>Forma parte de la comunidad estudiantil de ciberseguridad de la UTEC.</p>
+    <!-- Reemplazar el href con el link del formulario cuando esté listo -->
     <a href="https://forms.gle/EiUBtWVxYbdM5zFa9" target="_blank" class="btn">
         Postular a CSH
     </a>
@@ -146,26 +509,87 @@
 
 <section id="terminal" class="section-card">
     <h2>Consola CSH</h2>
+    <p class="terminal-desc">Terminal interactiva — prueba: <code>help</code> &nbsp;·&nbsp; <code>whoami</code> &nbsp;·&nbsp; <code>ls</code> &nbsp;·&nbsp; <code>flag</code> &nbsp;·&nbsp; <code>nmap</code></p>
     <div class="terminal">
-        <div id="output"></div>
-        <input type="text" id="input" placeholder="Escribe help...">
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+            </div>
+            <span class="terminal-title">csh@utec — bash</span>
+        </div>
+        <div id="output" class="terminal-output"></div>
+        <div class="terminal-input-line">
+            <span class="prompt-label">csh@utec:~$</span>
+            <input type="text" id="input" autocomplete="off" spellcheck="false" placeholder="escribe un comando...">
+        </div>
     </div>
 </section>
 
 <footer>
     <div class="socials">
-        <a href="https://www.instagram.com/csh.utec/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        
-        <a href="https://www.linkedin.com/company/csh-utec?trk=public_post_feed-actor-name" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        
-        <a href="https://github.com/csh-utec" target="_blank" rel="noopener noreferrer">GitHub</a>
-        
-        <a href="https://discord.gg/zh6ccAs3fC" target="_blank" rel="noopener noreferrer">Discord</a>
-        
-        <a href="https://chat.whatsapp.com/JPtod8RHQ4220v1Vc4lbdO" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+        <a href="https://www.instagram.com/csh.utec/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+            </svg>
+            <span>Instagram</span>
+        </a>
+
+        <a href="https://www.linkedin.com/company/csh-utec?trk=public_post_feed-actor-name" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M11 17v-4a2 2 0 014 0v4M11 10v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/csh-utec" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+            </svg>
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://discord.gg/zh6ccAs3fC" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037 13.84 13.84 0 00-.611 1.255 18.269 18.269 0 00-5.487 0 12.645 12.645 0 00-.617-1.255.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/>
+            </svg>
+            <span>Discord</span>
+        </a>
+
+        <a href="https://chat.whatsapp.com/JPtod8RHQ4220v1Vc4lbdO" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.306A9.959 9.959 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.93 13.67c-.207.583-1.215 1.114-1.66 1.154-.445.04-.857.198-2.886-.602-2.434-.965-3.993-3.47-4.113-3.63-.12-.162-.975-1.297-.975-2.475 0-1.178.617-1.757.836-1.997.218-.24.476-.3.635-.3.16 0 .318.001.458.008.147.007.344-.056.538.41.199.478.674 1.65.733 1.77.06.12.099.26.02.418-.08.16-.12.258-.238.397-.12.14-.252.312-.36.42-.12.118-.244.246-.105.482.14.237.62.991 1.33 1.604.914.795 1.686 1.041 1.924 1.16.238.118.377.099.517-.06.14-.158.595-.694.754-.932.16-.238.318-.198.537-.119.218.08 1.387.654 1.625.773.238.12.397.179.456.278.06.1.06.575-.148 1.158z" fill="currentColor"/>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+
     </div>
     <p id="footer-text"></p>
 </footer>
+
+<!-- Modal visor de PDF -->
+<div class="pdf-modal-overlay" id="pdfModal" role="dialog" aria-modal="true">
+    <div class="pdf-modal-box">
+        <div class="pdf-modal-header">
+            <div class="pdf-modal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+            </div>
+            <span class="pdf-modal-title" id="pdfModalTitle"></span>
+            <button class="pdf-modal-close" id="pdfModalClose" aria-label="Cerrar">&#10005;</button>
+        </div>
+        <div class="pdf-modal-body">
+            <iframe id="pdfModalFrame" src="" frameborder="0" title="PDF Viewer"></iframe>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
