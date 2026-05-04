@@ -1,3 +1,40 @@
+// ── Hamburger menu ──
+const navHamburger = document.getElementById("navHamburger");
+const navMenu      = document.getElementById("navMenu");
+
+if (navHamburger && navMenu) {
+    navHamburger.addEventListener("click", () => {
+        const open = navMenu.classList.toggle("open");
+        navHamburger.classList.toggle("open", open);
+        navHamburger.setAttribute("aria-expanded", open);
+    });
+
+    // Cierra al hacer click en un link
+    navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("open");
+            navHamburger.classList.remove("open");
+            navHamburger.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    // Cierra al hacer click fuera
+    document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !navHamburger.contains(e.target)) {
+            navMenu.classList.remove("open");
+            navHamburger.classList.remove("open");
+            navHamburger.setAttribute("aria-expanded", "false");
+        }
+    });
+}
+
+// ── Tap-to-flip en dispositivos touch ──
+if ("ontouchstart" in window) {
+    document.querySelectorAll(".member-card, .sobre-flip").forEach((card) => {
+        card.addEventListener("click", () => card.classList.toggle("flipped"));
+    });
+}
+
 // ── Typewriter hero tagline ──
 const heroTagline = document.getElementById("heroTagline");
 if (heroTagline) {
@@ -192,6 +229,14 @@ if (events3d) {
             autoMode = false;
         });
     });
+
+    // Swipe táctil
+    let touchX = 0;
+    events3d.addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+    events3d.addEventListener("touchend", (e) => {
+        const dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 40) navigate(dx > 0 ? 1 : -1);
+    }, { passive: true });
 }
 
 // ── Terminal CSH ──
